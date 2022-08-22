@@ -1,7 +1,7 @@
 import './Header.css'
 
 const Header = () =>{
-    const imagem = "https://github.com/Drakemaner/site-enzo/blob/master/public/fotos/logo.png?raw=true"
+    const imagem = 'https://raw.githubusercontent.com/Drakemaner/Site-Enzo/main/public/fotos/logo.png'
     return(
         <div className='header'>
             <header>

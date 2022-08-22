@@ -7,10 +7,10 @@
 }
 
 .header img {
-    max-width: 10%;
+    max-width: 16%;
     float: left;
     position: relative;
-    bottom: 24px;
+    bottom: 64px;
 }
 
 .header ul li{
