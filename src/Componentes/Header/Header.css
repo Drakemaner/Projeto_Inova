@@ -1,0 +1,26 @@
+.header{
+    background-color: #c9e265;
+    text-align: center;
+    padding: 64px;
+    margin-bottom: 240px;
+    color: white;
+}
+
+.header img {
+    max-width: 10%;
+    float: left;
+    position: relative;
+    bottom: 24px;
+}
+
+.header ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 24px;
+    float: right;
+    font-size: 24px;
+    position: relative;
+    bottom: 24px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}

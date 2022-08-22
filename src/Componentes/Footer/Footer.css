@@ -1,0 +1,56 @@
+.footer{
+    background-color: #c9e265;
+    padding: 104px;
+    margin-top: 240px;
+    
+}
+
+
+.contatos{
+    max-width: 75%;
+    position: relative;
+    left: 264px;
+    top: 16px;
+}
+
+.email{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    width: 32%;
+    padding: 24px;
+    margin: 0 48px;
+    margin-bottom: 16px;
+}
+.contato{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    width: 32%;
+    padding: 24px;
+    margin: 0 48px;
+    
+}
+
+.doacao{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    width: 32%;
+    padding: 16px;
+    margin: 0 48px;
+   
+    
+}
+
+.info{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    width: 32%;
+    padding: 26px;
+    margin: 0 48px;
+    margin-bottom: 16px;
+    position: relative;
+    bottom: 8px;
+}
