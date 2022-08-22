@@ -9,7 +9,7 @@
 .contatos{
     max-width: 75%;
     position: relative;
-    left: 264px;
+    left: 216px;
     top: 16px;
 }
 
@@ -36,10 +36,11 @@
     display: inline-block;
     background-color: white;
     border-radius: 10px;
-    width: 32%;
+    width: 34%;
     padding: 16px;
     margin: 0 48px;
-   
+    position: relative;
+    top: 2px;
     
 }
 
@@ -53,4 +54,5 @@
     margin-bottom: 16px;
     position: relative;
     bottom: 8px;
+    right: 6px;
 }
