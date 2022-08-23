@@ -4,11 +4,13 @@ import './Formulario.css'
 const Formulario = () => {
     return(
         <div className='form'>
+
             <form>
+                <h3>Login</h3>
                 <Input
                     label ='E-mail'
                     type = 'text'
-                    placeholder = 'Digite o Nome do seu Cachorro'
+                    placeholder = 'Digite seu E-mail'
                 />
                 <Input
                     label ='Senha'

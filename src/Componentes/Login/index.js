@@ -10,7 +10,6 @@ const Login = () =>{
     return(
         <div>
             <Header />
-            <h3>Login</h3>
             <Formulario/>
             <Footer />
         </div>
