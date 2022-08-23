@@ -1,10 +1,14 @@
+import Footer from '../Footer'
+import Header from '../Header'
 import './Main.css'
 
 
  const Main = () =>{
     return(
         <div className='main'>
-            <p>Sexo2</p>
+            <Header/>
+                <p>Sexo2</p>
+            <Footer/>
         </div>
     )
 }

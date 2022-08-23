@@ -24,3 +24,10 @@
     font-family: 'Roboto Slab', serif;
     color: white;
 }
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
