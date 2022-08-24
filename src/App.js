@@ -5,7 +5,41 @@ import { Routes, Route } from 'react-router-dom';
 import Login from './Pages/Login'
 import { useEffect, useState } from 'react';
 import Cadastro from './Pages/Cadastro';
+import Perfis from './Pages/Perfis';
 
+
+
+const caes = [{
+  nome: 'Roberto',
+  idade: 8,
+  raça: 'Golden Retriever'
+},
+{
+  nome: 'Thor',
+  idade: 5,
+  raça: 'Pastor Alemão'
+},
+{
+  nome: 'Thor',
+  idade: 5,
+  raça: 'Pastor Alemão'
+},
+{
+  nome: 'Thor',
+  idade: 5,
+  raça: 'Pastor Alemão'
+},
+{
+  nome: 'Thor',
+  idade: 5,
+  raça: 'Pastor Alemão'
+},
+{
+  nome: 'Thor',
+  idade: 5,
+  raça: 'Pastor Alemão'
+}
+]
 
 
 function App() {
@@ -35,6 +69,7 @@ function App() {
       <Route path="/" element={<Main status = {Logado}/>}/>
       <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta}/>} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
+      <Route path='/Perfis' element={<Perfis caes={caes}/>}/>
     </Routes>
   );
 }

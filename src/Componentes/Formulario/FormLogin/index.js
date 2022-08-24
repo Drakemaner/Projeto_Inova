@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import Input from '../../Input'
 import './Formulario.css'
+import { Link } from 'react-router-dom'
 
-const Formulario = (props) => {
+const FormLogin = (props) => {
 
 
     const [email,setEmail] = useState('')
