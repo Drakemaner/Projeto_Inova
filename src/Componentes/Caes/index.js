@@ -1,15 +1,36 @@
 import './Caes.css'
 
+
+
+
+
+
 const Caes = (props) =>{
+
+    const perfilEscolhido =(nome,idade,raça) =>{
+        props.Escolhido({
+            nome,
+            idade,
+            raça
+        })
+    }
+    
+
+
+
+
     return(
-        <div>
+    <div>
         <ul>
-            <li>
-                <img src='' alt='Foto-de-Perfil'/>
-                <p>{props.nome}</p>
-                <p>{props.idade}</p>
-                <p>{props.raça}</p>
-            </li>
+            <Link to={`/Perfil/${props.nome}`}> 
+                <li>
+                    <img src='' alt='Foto-de-Perfil'/>
+                    <p>{props.nome}</p>
+                    <p>{props.idade}</p>
+                    <p>{props.raça}</p>
+                    {perfilEscolhido(props.nome, props.idade, props.raça)}
+                </li>
+            </Link>
         </ul>
     </div>
     )

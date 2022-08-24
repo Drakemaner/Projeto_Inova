@@ -6,6 +6,7 @@ import Login from './Pages/Login'
 import { useEffect, useState } from 'react';
 import Cadastro from './Pages/Cadastro';
 import Perfis from './Pages/Perfis';
+import Perfil from './Pages/Perfil';
 
 
 
@@ -45,7 +46,7 @@ const caes = [{
 function App() {
 
   const [Logado, setLogado] = useState(false)
-
+  const [Perfil, setPerfil] = useState('')
 
   const Status = (valor) =>{
     if(valor == true){
@@ -63,13 +64,18 @@ function App() {
   const cadastrarContas = (conta) =>{
     setConta(...Conta, conta)
   }
+
+  const perfilEscolhido = (perfil) =>{
+    setPerfil(perfil)
+  }
   
   return (
     <Routes>
       <Route path="/" element={<Main status = {Logado}/>}/>
       <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta}/>} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
-      <Route path='/Perfis' element={<Perfis caes={caes}/>}/>
+      <Route path='/Perfis' element={<Perfis Escolhido={valor => perfilEscolhido(valor)} caes={caes}/>}/>
+      <Route path={`/Perfil/${Perfil.nome}`} element={<Perfil perfil={Perfil}/>}/>
     </Routes>
   );
 }
