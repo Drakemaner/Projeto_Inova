@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import Footer from '../Footer'
-import Header from '../Header'
+import Footer from '../../Componentes/Footer'
+import Header from '../../Componentes/Header'
 import Login from '../Login'
-import Mapa from '../Mapa'
+import Mapa from '../../Componentes/Mapa'
 import './Main.css'
 
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Input from '../Input'
+import Input from '../../Input'
 import './Formulario.css'
 
 const Formulario = (props) => {

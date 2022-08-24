@@ -1,6 +1,7 @@
 import { useState } from "react";
-import './FormCadastro.css'
+import '../FormLogin/Formulario.css'
 import Input from "../../Input";
+import { Link } from "react-router-dom";
 
 
 function FormCadastro(props) {
@@ -16,7 +17,7 @@ function FormCadastro(props) {
 
     const cadastro = (evento) => {
         evento.preventDefault()
-        props.aoCadastrarse({
+        props.aoCadastrar({
             email,
             senha,
             nome,
@@ -29,7 +30,7 @@ function FormCadastro(props) {
     }
 
     return(
-        <div className="form-cadastro">
+        <div className="form">
             <form onSubmit={cadastro}>
                 <h3>Cadastro</h3>
                 <Input
@@ -74,7 +75,7 @@ function FormCadastro(props) {
                     enviar = {valor => setRaça(valor)}
                     valor = {raça}
                 />
-                <button type='submit'>Cadastra-se</button>
+                <Link to={'/Login'}><button type='submit'>Cadastra-se</button></Link>
             </form>
         </div>
     );
