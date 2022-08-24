@@ -36,10 +36,10 @@ const Formulario = (props) => {
                     enviar = {valor => setSenha(valor)}
                     valor = {senha}
                 />
-                <button type='submit'>Entrar</button>
+                <Link to='/'><button type='submit'>Entrar</button></Link>
             </form>
         </div>
     )
 }
 
-export default Formulario
+export default FormLogin

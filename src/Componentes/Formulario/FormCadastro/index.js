@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../FormLogin/Formulario.css'
+import '../FormCadastro/Cadastro.css'
 import Input from "../../Input";
 import { Link } from "react-router-dom";
 

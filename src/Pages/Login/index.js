@@ -1,8 +1,9 @@
-import Formulario from '../../Componentes/Formulario/FormLogin'
+
 import Header from '../../Componentes/Header'
 import Footer from '../../Componentes/Footer'
 import './Login.css'
 import { useState } from 'react'
+import FormLogin from '../../Componentes/Formulario/FormLogin'
 
 
 
@@ -32,7 +33,7 @@ const Login = (props) =>{
     return(
         <div>
             <Header estaLogado = {logado}/>
-            <Formulario
+            <FormLogin
               aoLogar={conta => Logado(conta)}  
             />
             <Footer />

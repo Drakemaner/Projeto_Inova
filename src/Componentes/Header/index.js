@@ -34,10 +34,10 @@ const Header = (props) =>{
                 </div>
                 <nav>
                     <ul>
-                        <li className= {classeLogado}><Link to= {'/Meu Perfil'}>Meu Perfil</Link></li>
-                        <li className= {classeLogado}><Link to= {'/Peris'}>Perfis</Link></li>
-                        <li className={classeGuest}><Link to= {'/Login'}>Login</Link></li>
-                        <li className={classeGuest}><Link to= {'/Cadastro'}>Cadastre-se</Link></li>
+                        <li className= {classeLogado}><Link to= '/Meu Perfil'>Meu Perfil</Link></li>
+                        <li className= {classeLogado}><Link to= '/Peris'>Perfis</Link></li>
+                        <li className={classeGuest}><Link to= '/Login'>Login</Link></li>
+                        <li className={classeGuest}><Link to= '/Cadastro'>Cadastre-se</Link></li>
                     </ul>
                 </nav>
             </header>
