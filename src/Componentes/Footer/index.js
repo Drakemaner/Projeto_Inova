@@ -7,30 +7,28 @@ const Footer = () => {
     <div className='footer'>
         <footer className='contatos'>
             <div className='email'>
-                <img src='' alt='contato'></img>
-                <small>EMAIL PARA PARCERIA</small>
+                <big><b>Email para parceria</b></big>
                 <br/>
-                <strong>PETMATCH@HOTMAIL.COM</strong>
+                <img src='' alt='E-mail: '></img>
+                <small>petmatch@hotmail.com</small>
             </div>
             <div className='contato'>
-                <img src='' alt='contato'></img>
-                <small>DUVIDAS?</small>
+                <big><b>Dúvidas</b></big>
                 <br/>
-                <strong>(27) 4567-8901</strong>
+                <img src='' alt='Telefone: '></img>
+                <small>(27)4567-8901</small>
             </div>
             <div className='doacao'>
-                <img src='' alt='contato'></img>
-                <small>SEJA UM DOADOR</small>
+                <big><b>Seja um doador</b></big>
                 <br/>
-                <strong>PIX: (27) 4567-8901</strong>
-                <br/>
-                <strong>PICPAY: PETMATCH</strong>
+                <img src='' alt='Pagamentos: '></img>
+                <small>Pix: (27)4567-8901 ou Picpay: PETMATCH</small>
             </div>
             <div className='info'>
-                <img src='' alt='contato'></img>
-                <small>SAIBA QUEM SOMOS</small>
+                <big><b>Saiba quem somos</b></big>
                 <br/>
-                <strong>www.petmatch.com.br</strong>
+                <img src='' alt='Site: '></img>
+                <small>www.petmatch.com.br</small>
             </div>
         </footer>
     </div>

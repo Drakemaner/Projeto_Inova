@@ -1,0 +1,5 @@
+import { useState } from 'react'
+import Footer from '../Footer'
+import Header from '../Header'
+import FormCadastro from '../Formulario/FormCadastro'
+import '/.Cadastro.css'
