@@ -56,15 +56,13 @@ function FormCadastro(props) {
                 />
                 <Input
                     label  = "Idade"
-                    type = "Integer"
+                    type = "number"
                     placeholder = "Digite a idade do seu animal"
                     enviar = {valor => setIdade(valor)}
                     valor = {idade}
                 />
                 <Input
                     label  = "Sexo"
-                    type = "text"
-                    placeholder = "Digite o sexo do animal"
                     enviar = {valor => setSexo(valor)}
                     valor = {sexo}
                 />
