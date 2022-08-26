@@ -41,7 +41,7 @@ const Header = (props) =>{
                 <nav>
                     <ul>
                         <li className= {classeGuest}><Link to= '/Meu Perfil'><strong>Meu Perfil</strong></Link></li>
-                        <li className= {classeGuest}><Link to= '/Peris'><strong>Perfis</strong></Link></li>
+                        <li className= {classeGuest}><Link to= '/Perfis'><strong>Perfis</strong></Link></li>
                         <li className={classeGuest}><Link to= '/Login'><strong>Entrar</strong></Link></li>
                         <li className={classeGuest}><Link to= '/Cadastro'><strong>Cadastrar</strong></Link></li>
                     </ul>

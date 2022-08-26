@@ -9,9 +9,9 @@ const Input = (props) =>{
     return(
         <div className='input'>
             <label for='input'>{props.label}</label>
-            {props.label != 'Sexo' && <input name ='input' onChange={aoEnviar} type={props.type} placeholder={props.placeholder} value = {props.valor} />}
+            {props.label !== 'Sexo' && <input name ='input' onChange={aoEnviar} type={props.type} placeholder={props.placeholder} value = {props.valor} />}
             {
-                props.label == 'Sexo' && 
+                props.label === 'Sexo' && 
                 <select onChange={aoEnviar}>
                     <option value='M'>M</option>
                     <option value='F'>F</option>

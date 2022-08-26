@@ -7,7 +7,7 @@ import './Perfil.css'
 const Perfil = (props) =>{
 
 
-    const [Comentarios, setComentarios] = useState('')
+    const [Comentarios, setComentarios] = useState([])
 
 
     const escreverComentario = (evento) => {
@@ -30,7 +30,7 @@ const Perfil = (props) =>{
                 {Comentarios.map(comentarios => <p>{comentarios}</p>)}
                 <form onSubmit={escreverComentario}>
                     <input type='text'/>
-                    <button type='submit'></button>
+                    <button type='submit'>Enviar</button>
                 </form>
             </div>
         </div>
