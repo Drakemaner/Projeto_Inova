@@ -1,22 +1,30 @@
-.form {
-    display: flex;
-    justify-content: center;
-    margin: 80px 0;
-}
 
-.form form {
-    max-width: 80%;
+.form-login form {
+    display: flex 80px;
+    justify-content: center;
+    margin: 80px 500px;
+    max-width: 100%;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 36px 64px;
     box-shadow: 8px 8px 16px rgba(0,0,0,0.08);
+    font-family: Arial, Helvetica, sans-serif
 }
 
-h3{
-    font-size: 32px;
+.form-login Input{
+    margin: 0px 1px 1px 0px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.08);
 }
 
-button {
+.form-login h3 {
+    
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-login button {
+
     background-color: #c9e265;
     border-radius: 10px;
     font-weight: 700;
@@ -28,6 +36,6 @@ button {
     margin: 16px 0;
 }
 
-button:hover {
+.form-login button:hover {
     padding: 33px;
 }

@@ -30,9 +30,9 @@ function FormCadastro(props) {
     }
 
     return(
-        <div className="form">
+        <div className="form-cadastro">
             <form onSubmit={cadastro}>
-                <h3>Cadastro</h3>
+                <h3>Crie sua conta</h3>
                 <Input
                     label  = "E-mail"
                     type = "text"

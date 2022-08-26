@@ -7,27 +7,27 @@ const Footer = () => {
     <div className='footer'>
         <footer className='contatos'>
             <div className='email'>
-                <big><b>Email para parceria</b></big>
+                <big><b>Parcerias</b></big>
                 <br/>
-                <img src='' alt='E-mail: '></img>
+                <strong><img src='' alt='E-mail: '></img></strong>
                 <small>petmatch@hotmail.com</small>
             </div>
             <div className='contato'>
                 <big><b>Dúvidas</b></big>
                 <br/>
-                <img src='' alt='Telefone: '></img>
-                <small>(27)4567-8901</small>
+                <strong><img src='' alt='Telefone: '></img></strong>
+                <small>(27) 4567-8901</small>
             </div>
             <div className='doacao'>
-                <big><b>Seja um doador</b></big>
+                <big><b>Doações</b></big>
                 <br/>
-                <img src='' alt='Pagamentos: '></img>
-                <small>Pix: (27)4567-8901 ou Picpay: PETMATCH</small>
+                <strong><img src='' alt='Pagamentos: '></img></strong>
+                <small>Pix: (27) 4567-8901 ou Picpay: PETMATCH</small>
             </div>
             <div className='info'>
-                <big><b>Saiba quem somos</b></big>
+                <big><b>Quem somos</b></big>
                 <br/>
-                <img src='' alt='Site: '></img>
+                <strong><img src='' alt='Site: '></img></strong>
                 <small>www.petmatch.com.br</small>
             </div>
         </footer>

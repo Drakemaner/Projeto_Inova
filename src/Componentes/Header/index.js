@@ -23,21 +23,27 @@ const Header = (props) =>{
         }
         setLogado(props.estaLogado)
     },[props.estaLogado])
+
+    
         
     
 
     return(
+
         <div className='header'>
             <header>
+                <div>
+                <input type='text' placeholder='Faça sua pesquisa na PetMatch...'></input> 
+                </div>
                 <div>
                 <Link to='/'><img src={imagem} alt='logo'/></Link>
                 </div>
                 <nav>
                     <ul>
-                        <li className= {classeLogado}><Link to= '/Meu Perfil'>Meu Perfil</Link></li>
-                        <li className= {classeLogado}><Link to= '/Peris'>Perfis</Link></li>
-                        <li className={classeGuest}><Link to= '/Login'>Login</Link></li>
-                        <li className={classeGuest}><Link to= '/Cadastro'>Cadastre-se</Link></li>
+                        <li className= {classeGuest}><Link to= '/Meu Perfil'><strong>Meu Perfil</strong></Link></li>
+                        <li className= {classeGuest}><Link to= '/Peris'><strong>Perfis</strong></Link></li>
+                        <li className={classeGuest}><Link to= '/Login'><strong>Entrar</strong></Link></li>
+                        <li className={classeGuest}><Link to= '/Cadastro'><strong>Cadastrar</strong></Link></li>
                     </ul>
                 </nav>
             </header>

@@ -19,10 +19,10 @@ const FormLogin = (props) => {
     }
 
     return(
-        <div className='form'>
+        <div className='form-login'>
 
             <form onSubmit={login}>
-                <h3>Login</h3>
+                <h3>Acesse sua conta</h3>
                 <Input
                     label ='E-mail'
                     type = 'text'

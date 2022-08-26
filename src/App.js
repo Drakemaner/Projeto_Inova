@@ -1,4 +1,3 @@
-
 import './App.css';
 import Main from './Pages/Main';
 import { Routes, Route } from 'react-router-dom';
@@ -7,7 +6,6 @@ import { useEffect, useState } from 'react';
 import Cadastro from './Pages/Cadastro';
 import Perfis from './Pages/Perfis';
 import Perfil from './Pages/Perfil';
-
 
 
 const caes = [{
