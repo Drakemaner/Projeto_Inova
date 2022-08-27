@@ -9,31 +9,37 @@ import Perfil from './Pages/Perfil';
 
 
 const caes = [{
+  id: 0,
   nome: 'Roberto',
   idade: 8,
   raça: 'Golden Retriever'
 },
 {
+  id: 1,
   nome: 'Thor',
   idade: 5,
   raça: 'Pastor Alemão'
 },
 {
+  id: 2,
   nome: 'Thor',
   idade: 5,
   raça: 'Pastor Alemão'
 },
 {
+  id: 3,
   nome: 'Thor',
   idade: 5,
   raça: 'Pastor Alemão'
 },
 {
+  id: 4,
   nome: 'Thor',
   idade: 5,
   raça: 'Pastor Alemão'
 },
 {
+  id: 5,
   nome: 'Thor',
   idade: 5,
   raça: 'Pastor Alemão'
@@ -71,7 +77,7 @@ function App() {
       <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta}/>} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
       <Route path='/Perfis' element={<Perfis caes={caes}/>}/>
-      {caes.map(cao => <Route path={`/Perfil/${cao.nome}`} element={<Perfil nome={cao.nome}/>}/>)}
+      {caes.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil nome={cao.nome}/>}/>)}
       {Conta.logado === true && <Route path={`/MeuPerfil`} element={<Perfil nome={Conta.nome}/>}/>}
     </Routes>
   );

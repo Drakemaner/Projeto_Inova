@@ -8,7 +8,7 @@ const Input = (props) =>{
 
     return(
         <div className='input'>
-            <label for='input'>{props.label}</label>
+            <label htmlFor = 'input'>{props.label}</label>
             {props.label !== 'Sexo' && <input name ='input' onChange={aoEnviar} type={props.type} placeholder={props.placeholder} value = {props.valor} />}
             {
                 props.label === 'Sexo' && 

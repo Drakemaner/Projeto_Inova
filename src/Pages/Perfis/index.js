@@ -11,7 +11,7 @@ const Perfis = (props) =>{
     return(
         <div>
             <Header logado ={true}/>
-            {props.caes.map(cao => <Caes nome = {cao.nome} idade = {cao.idade} raça = {cao.raça}/>)}
+            {props.caes.map(cao => <Caes key = {cao.id} nome = {cao.nome} idade = {cao.idade} raça = {cao.raça}/>)}
             <Footer/>
         </div>
     )
