@@ -72,6 +72,7 @@ function App() {
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
       <Route path='/Perfis' element={<Perfis caes={caes}/>}/>
       {caes.map(cao => <Route path={`/Perfil/${cao.nome}`} element={<Perfil nome={cao.nome}/>}/>)}
+      {Conta.logado === true && <Route path={`/MeuPerfil`} element={<Perfil nome={Conta.nome}/>}/>}
     </Routes>
   );
 }

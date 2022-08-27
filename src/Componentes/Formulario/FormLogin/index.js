@@ -37,7 +37,7 @@ const FormLogin = (props) => {
                     enviar = {valor => setSenha(valor)}
                     valor = {senha}
                 />
-                <Link to='/'><button type='submit'>Entrar</button></Link>
+                <button type='submit'>Entrar</button>
             </form>
         </div>
     )

@@ -8,17 +8,6 @@ import { useEffect, useState } from 'react'
 
 const Caes = (props) =>{
     
-    
-
-
-
-
-
-    
-    
-    
-
-
 
     return(
     <div>

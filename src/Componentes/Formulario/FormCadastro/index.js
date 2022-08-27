@@ -11,21 +11,24 @@ function FormCadastro(props) {
     const [senha, setSenha] = useState('')
     const [nome, setNome] = useState('')
     const [idade , setIdade] = useState('')
-    const [sexo , setSexo] = useState('')
+    const [sexo , setSexo] = useState('M')
     const [raça , setRaça] = useState('')
+    const [logado, setLogado] = useState(false)
 
 
     const cadastro = (evento) => {
         evento.preventDefault()
-        props.aoCadastrar({
-            email,
-            senha,
-            nome,
-            idade,
-            sexo,
-            raça
-
-        }  
+        props.aoCadastrar
+        (
+            {
+                email,
+                senha,
+                nome,
+                idade,
+                sexo,
+                raça,
+                logado
+            }  
         )
     }
 
@@ -73,7 +76,7 @@ function FormCadastro(props) {
                     enviar = {valor => setRaça(valor)}
                     valor = {raça}
                 />
-                <Link to={'/Login'}><button type='submit'>Cadastra-se</button></Link>
+                <button type='submit'>Cadastra-se</button>
             </form>
         </div>
     );
