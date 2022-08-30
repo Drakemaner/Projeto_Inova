@@ -1,14 +1,37 @@
-import './Mapa.css'
+import * as React from 'react';
+import Map, { Marker } from 'react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiZ2FicmllbGRlbnRpIiwiYSI6ImNsN2ZpMzhxcDAzbzAzenFpaW8wdHBnbzgifQ.q0SUHizgCROOAfAjlFMzhw';
 
 
 
-const Mapa = () =>{
-    return(
-        <div className='mapa'>
+const Mapa = () => {
+
+    const [viewState, setViewState] = React.useState({
+        longitude: -40.28528570945985,
+        latitude: -20.333264204325932,
+        zoom: 16
+    });
+
+
+    return (
+        <div className="mapa" >
             <h3>Adoção mais próxima</h3>
-            <img className='mapa' src='https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/mapa.png?raw=true' alt ='mapa'/>
+            <Map
+                {...viewState}
+                onMove={evt => setViewState(evt.viewState)}
+                style={{ width: 1000, height: 800 }}
+                mapStyle="mapbox://styles/mapbox/streets-v9"
+                mapboxAccessToken={MAPBOX_TOKEN}
+            >
+                <Marker longitude={-40.28528570945985} latitude={-20.333264204325932} color="red" />
+            </Map>
         </div>
+
     )
 }
+
+
 
 export default Mapa
