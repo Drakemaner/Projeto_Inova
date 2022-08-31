@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import Header from '../../Componentes/Header'
 import './Perfil.css'
+import Comentario from '../../Componentes/Comentario'
 
 
 
@@ -7,18 +9,24 @@ import './Perfil.css'
 const Perfil = (props) =>{
 
 
+    const [comentario, setComentario] = useState('')
     const [Comentarios, setComentarios] = useState([])
+    
+
+    
 
 
-    const escreverComentario = (evento) => {
+    const enviarComentario = (evento) => {
         evento.preventDefault()
-        setComentarios(...Comentarios, evento.target.value)
+        setComentarios(...Comentarios, comentario)
+        
     }
 
-
+    console.log(Comentarios)
 
     return(
         <div>
+            <Header/>
             <div>
                 <h3>Seu Perfil</h3>
                 <p>{props.nome}</p>
@@ -27,10 +35,9 @@ const Perfil = (props) =>{
             </div>
             <div>
                 <h3>Comentários:</h3>
-                {Comentarios.map(comentarios => <p>{comentarios}</p>)}
-                <form onSubmit={escreverComentario}>
-                    <input type='text'/>
-                    <button type='submit'>Enviar</button>
+                <p>{Comentarios}</p>
+                <form onSubmit={enviarComentario}>
+                    <Comentario comentario={valor => setComentario(valor)} valor={comentario}/>
                 </form>
             </div>
         </div>
