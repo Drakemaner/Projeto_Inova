@@ -21,7 +21,7 @@ const Main = (props) => {
                 <h1> Aumigos para adoção por perto </h1>
                 {props.caes.map
                 (cao =>
-                    <div className='cachorro-1'>
+                    <div key={cao.id} className='cachorro-1'>
                         <img src={cao.imagem} alt='' />
                         <h2>{cao.nome}</h2>
                         <big>{cao.raça}</big>
