@@ -8,47 +8,121 @@ import Perfis from './Pages/Perfis';
 import Perfil from './Pages/Perfil';
 
 
-const  caes = [{
+const  caesMain = [{
   id: 0,
   nome: 'Roberto',
   idade: 8,
   raça: 'Golden Retriever',
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR',
   imagem: ''
 },
 {
   id: 1,
   nome: 'Thor',
   idade: 5,
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
+  raça: 'Pastor Alemão',
+  sexo: 'M',
+},
+{
+  id: 2,
+  nome: 'Thor',
+  idade: 5,
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
+  raça: 'Pastor Alemão',
+  sexo: 'M',
+},
+{
+  id: 3,
+  nome: 'Thor',
+  idade: 5,
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
+  raça: 'Pastor Alemão',
+  sexo: 'M',
+},
+{
+  id: 4,
+  nome: 'Thor',
+  idade: 5,
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
+  raça: 'Pastor Alemão',
+  sexo: 'M',
+},
+{
+  id: 5,
+  nome: 'Thor',
+  idade: 5,
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
+  raça: 'Pastor Alemão',
+  sexo: 'M',
+},
+{
+  id: 6,
+  nome: 'Thor',
+  idade: 5,
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
+  raça: 'Pastor Alemão',
+  sexo: 'M'
+},
+]
+
+
+const  caesPerfis = [{
+  id: 0,
+  nome: 'Roberto',
+  idade: 8,
+  raça: 'Golden Retriever',
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR',
+  imagem: ''
+},
+{
+  id: 1,
+  nome: 'Thor',
+  idade: 5,
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
   raça: 'Pastor Alemão'
 },
 {
   id: 2,
   nome: 'Thor',
   idade: 5,
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
   raça: 'Pastor Alemão'
 },
 {
   id: 3,
   nome: 'Thor',
   idade: 5,
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
   raça: 'Pastor Alemão'
 },
 {
   id: 4,
   nome: 'Thor',
   idade: 5,
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
   raça: 'Pastor Alemão'
 },
 {
   id: 5,
   nome: 'Thor',
   idade: 5,
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
   raça: 'Pastor Alemão'
 },
 {
   id: 6,
   nome: 'Thor',
   idade: 5,
+  sexo: 'M',
+  descricao: 'CACHORRO PIROKUDO, GOSTA DE TRANSAR' ,
   raça: 'Pastor Alemão',
 },
 ]
@@ -80,11 +154,11 @@ function App() {
   
   return (
     <Routes>
-      <Route path="/" element={<Main status = {Logado}/>}/>
+      <Route path="/" element={<Main caes={caesMain} status = {Logado}/>}/>
       <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta}/>} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
-      <Route path='/Perfis' element={<Perfis caes={caes}/>}/>
-      {caes.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil nome={cao.nome}/>}/>)}
+      <Route path='/Perfis' element={<Perfis caes={caesPerfis}/>}/>
+      {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil nome={cao.nome}/>}/>)}
       {Conta.logado === true && <Route path={`/MeuPerfil`} element={<Perfil nome={Conta.nome}/>}/>}
     </Routes>
   );
