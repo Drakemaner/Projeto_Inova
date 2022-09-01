@@ -14,7 +14,7 @@ const Caes = (props) =>{
         
         <ul>
             <li>
-                <Link to={`/Perfil/${props.nome}`}><img src='' alt='Foto-de-Perfil'/></Link>
+                <Link to={`/Perfil/${props.nome}`}><img src= {props.imagem} alt='Foto-de-Perfil'/></Link>
                 <p>{props.nome}</p>
                 <p>{props.idade}</p>
                 <p>{props.raça}</p>

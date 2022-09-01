@@ -8,11 +8,12 @@ import Perfis from './Pages/Perfis';
 import Perfil from './Pages/Perfil';
 
 
-const caes = [{
+const  caes = [{
   id: 0,
   nome: 'Roberto',
   idade: 8,
-  raça: 'Golden Retriever'
+  raça: 'Golden Retriever',
+  imagem: ''
 },
 {
   id: 1,
@@ -43,7 +44,13 @@ const caes = [{
   nome: 'Thor',
   idade: 5,
   raça: 'Pastor Alemão'
-}
+},
+{
+  id: 6,
+  nome: 'Thor',
+  idade: 5,
+  raça: 'Pastor Alemão',
+},
 ]
 
 

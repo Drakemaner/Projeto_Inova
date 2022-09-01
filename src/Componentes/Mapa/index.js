@@ -17,13 +17,13 @@ const Mapa = () => {
 
     return (
         <div className="mapa" >
-            <h3>Adoção mais próxima</h3>
+            <h1>Adoção mais próxima</h1>
             <Map
+                mapboxAccessToken={MAPBOX_TOKEN}
                 {...viewState}
                 onMove={evt => setViewState(evt.viewState)}
-                style={{ width: 1000, height: 800 }}
+                style={{ left: 16, width: 1485, height: 400 }}
                 mapStyle="mapbox://styles/mapbox/streets-v9"
-                mapboxAccessToken={MAPBOX_TOKEN}
             >
                 <Marker longitude={-40.28528570945985} latitude={-20.333264204325932} color="red" />
             </Map>

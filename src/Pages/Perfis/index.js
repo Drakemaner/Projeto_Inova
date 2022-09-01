@@ -9,7 +9,7 @@ const Perfis = (props) =>{
 
     
     return(
-        <div>
+        <div className='perfis'>
             <Header logado ={true}/>
             {props.caes.map(cao => <Caes key = {cao.id} nome = {cao.nome} idade = {cao.idade} raça = {cao.raça}/>)}
             <Footer/>
