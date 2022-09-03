@@ -6,22 +6,21 @@ import { useEffect, useState } from 'react'
 
 
 
-const Caes = (props) =>{
-    
+const Caes = (props) => {
 
-    return(
-    <div>
-        
-        <ul>
-            <li>
-                <Link to={`/Perfil/${props.nome}`}><img src= {props.imagem} alt='Foto-de-Perfil'/></Link>
-                <p>{props.nome}</p>
-                <p>{props.idade}</p>
-                <p>{props.raça}</p>
-            </li>
-           
-        </ul>
-    </div>
+
+    return (
+        <div className='perfis'>
+            <div className='caesperfis'>
+                <nav>
+                    <Link to={`/Perfil/${props.nome}`}><img src={props.imagem} alt='Foto-de-Perfil' /></Link>
+                    <p>Nome: {props.nome}</p>
+                    <p>Idade: {props.idade}</p>
+                    <p>Sexo: {props.sexo}</p>
+                    <p>Raça: {props.raça}</p>
+                </nav>
+            </div>
+        </div>
     )
 }
 

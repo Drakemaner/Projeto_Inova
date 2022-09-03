@@ -18,17 +18,18 @@ const Main = (props) => {
             <Header estaLogado={props.status} />
             <Mapa/>
             <div className='adoção'>
+                <hr></hr>
                 <h1> Aumigos para adoção por perto </h1>
                 {props.caes.map
-                (cao =>
-                    <div key={cao.id} className='cachorro-1'>
-                        <img src={cao.imagem} alt='' />
-                        <h2>{cao.nome}</h2>
-                        <big>{cao.raça}</big>
-                        <p>{cao.sexo}</p>
-                        <p>{cao.descricao}</p>
+                (caomain =>
+                    <div key={caomain.id} className='caesmain'>
+                        <img src={caomain.imagem} alt='' />
+                        <h2>{caomain.nome}</h2>
+                        <big>{caomain.sexo}</big>
+                        <p>{caomain.descricao}</p>
                     </div>
                 )}
+                <hr></hr>
             </div>
             <Footer/>
         </div>

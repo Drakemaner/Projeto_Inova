@@ -1,10 +1,50 @@
+.adoção hr {
+    align-items: center;
+    border-bottom: 1px solid black ;
+    border-left: 20px;
+    border-right: 30px;
+    border-top: 20px;
+    margin: 4rem 4rem -2rem ;
+    height: 0px;
+}
+
+
 .adoção h1 {
+    margin-top: 70px;
     max-width: 100%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-   
+
 }
 
-.mapa h1{
+.mapa h1 {
+    margin-top: -5.5px;
     text-align: center;
+    align-items: center;
+}
+
+
+.caesmain{
+
+    display: inline-block;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 480px;
+    padding: 50px;
+    border: 0px solid white;
+    border-radius: 4px;
+    margin: 35px 30px 30px 96px;
+    background-color: #F2F2F2;
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.08);
+    
+}
+
+.caesmain img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: auto;
+    margin: auto;
 }

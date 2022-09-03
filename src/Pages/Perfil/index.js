@@ -6,38 +6,41 @@ import Comentario from '../../Componentes/Comentario'
 
 
 
-const Perfil = (props) =>{
+
+
+
+const Perfil = (props) => {
 
 
     const [comentario, setComentario] = useState('')
     const [Comentarios, setComentarios] = useState([])
-    
 
-    
+
+
 
 
     const enviarComentario = (evento) => {
         evento.preventDefault()
         setComentarios(...Comentarios, comentario)
-        
+
     }
 
     console.log(Comentarios)
 
-    return(
+    return (
         <div>
-            <Header/>
-            <div>
-                <h3>Seu Perfil</h3>
+            <Header  estaLogado={props.status}/>
+
+            <div className='caesperfil'>
+                <h2>Seu Perfil</h2>
+                <img src={props.imagem} alt='' />
                 <p>{props.nome}</p>
-                <h2>Sobre Mim</h2>
-                <p>Qualquer Merda, Denti essa é com você S2</p>
-            </div>
-            <div>
-                <h3>Comentários:</h3>
+                <h4>Sobre Mim</h4>
+                <p>{props.descricao}</p>
+                <h4>Comentários:</h4>
                 <p>{Comentarios}</p>
                 <form onSubmit={enviarComentario}>
-                    <Comentario comentario={valor => setComentario(valor)} valor={comentario}/>
+                    <Comentario comentario={valor => setComentario(valor)} valor={comentario} />
                 </form>
             </div>
         </div>
