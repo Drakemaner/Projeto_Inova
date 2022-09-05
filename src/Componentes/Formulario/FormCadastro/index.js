@@ -34,7 +34,6 @@ function FormCadastro(props) {
         setSenha('')
         setNome('')
         setIdade('')
-        setSexo('')
         setRaça('')
         setLogado('')
     }
