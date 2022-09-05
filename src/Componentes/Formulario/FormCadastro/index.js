@@ -30,6 +30,13 @@ function FormCadastro(props) {
                 logado
             }  
         )
+        setEmail('')
+        setSenha('')
+        setNome('')
+        setIdade('')
+        setSexo('')
+        setRaça('')
+        setLogado('')
     }
 
     return(
