@@ -14,27 +14,37 @@ import FormLogin from '../../Componentes/Formulario/FormLogin'
 
 const Login = (props) =>{
     const [logado, setLogado] = useState(false)
-    const [login, setLogin] = useState({})
+    const [login, setLogin] = useState([])
+    const [perfil, setPerfil] = useState([])
+    const [texto, setTexto] = useState('')
     const [classe, setClasse] = useState('Hidden')
-
-
+    
     const Logado = (conta) => {
         console.log(conta)
+        setPerfil(conta)
         
         setLogin(props.contas.filter(contas => conta.email === contas.email && conta.senha === contas.senha))
+     
+
+
+            if(conta.email === '' || conta.senha === ''){
+                setTexto('Campo de E-mail ou Senha vazios')
+                setClasse('Aviso')
+            }
+            else if((conta.email !== '' || conta.senha !== '') && login === []){
+                setTexto('E-mail ou Senha Inválidos')
+                console.log('Sexo')
+                setClasse('Aviso')
+            }
+            else if(login !== []){
+                console.log('Opaa')
+                setLogado(true)
+                setTexto('Você se Logou com Sucesso')
+                setClasse('Sucesso')
+            }
         
-        if(login.email === conta.email && login.senha === conta.senha){
-            login.logado = true
-            console.log('Roberto')
-            setLogado(true)
-            setClasse('Hidden')
-        }
-        else{
-            setClasse('showUp')
-            console.log('Sexo')
-            setLogin({})
-        }
-        console.log(classe)
+        
+         
     }
     console.log(login)
     props.status(logado)
@@ -49,7 +59,7 @@ const Login = (props) =>{
             <FormLogin
               aoLogar={conta => Logado(conta)}  
             />
-            <p className={classe}>Senha ou Email incorreto</p>
+            <p className={classe}>{texto}</p>
             <Footer />
         </div>
     )

@@ -129,22 +129,31 @@ function App() {
   }
 
   const [Conta, setConta] = useState([])
+  const [perfilLogado, setPefilLogado] = useState([])
 
+  const Verificacao = (valor) =>{
+    
+    setPefilLogado(Conta.filter(contas => contas.email === valor.email && contas.senha === valor.senha))
+  }
+  
 
   const cadastrarContas = (conta) =>{
     setConta([...Conta, conta])
   }
 
+
   
   
+
+
   return (
     <Routes>
       <Route path="/" element={<Main caes={caesMain} status = {Logado}/>}/>
-      <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta}/>} />
+      <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta} verificar = {valor => Verificacao(valor)} />} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
       <Route path='/Perfis' element={<Perfis  caes={caesPerfis}/>}/>
       {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil perfilLogado = {Conta.filter(conta => conta.logado == true)} imagem = {cao.imagem}  descricao = {cao.descricao}  />}/>)}
-      {Conta.logado === true && <Route path='/MeuPerfil' element={<Perfil perfilLogado = {Conta.filter(conta => conta.logado == true)}/>}/>}
+      {Conta.logado === true && <Route path='/MeuPerfil' element={<Perfil perfilLogado = {perfilLogado}/>}/>}
     </Routes>
   );
 }
