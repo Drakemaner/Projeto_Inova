@@ -5,9 +5,9 @@ import { useState } from 'react'
 
 
 const FormComentario = (props) => {
-    const [Comentario, setComentario] = useState('')
+    const [comentario, setComentario] = useState('')
     const [id, setId] = useState(0)
-
+    const nome = ''
 
     const enviarComentario = (evento) => {
         evento.preventDefault()
@@ -18,7 +18,8 @@ const FormComentario = (props) => {
             (
                 {
                     id,
-                    Comentario
+                    nome,
+                    comentario
                 }
             )
         setComentario('')
@@ -32,7 +33,7 @@ const FormComentario = (props) => {
                     type="text"
                     placeholder="Escreva um comentário..."
                     enviar={valor => setComentario(valor)}
-                    valor={Comentario}
+                    valor={comentario}
                 />
             </form>
         </div>

@@ -132,7 +132,7 @@ function App() {
 
 
   const cadastrarContas = (conta) =>{
-    setConta(...Conta, conta)
+    setConta([...Conta, conta])
   }
 
   
@@ -142,9 +142,9 @@ function App() {
       <Route path="/" element={<Main caes={caesMain} status = {Logado}/>}/>
       <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta}/>} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
-      <Route path='/Perfis' element={<Perfis caes={caesPerfis}/>}/>
-      {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil imagem = {cao.imagem}  descricao = {cao.descricao}  />}/>)}
-      {Conta.logado === true && <Route path={`/MeuPerfil`} element={<Perfil nome={Conta.nome}/>}/>}
+      <Route path='/Perfis' element={<Perfis  caes={caesPerfis}/>}/>
+      {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil perfilLogado = {Conta.filter(conta => conta.logado == true)} imagem = {cao.imagem}  descricao = {cao.descricao}  />}/>)}
+      {Conta.logado === true && <Route path='/MeuPerfil' element={<Perfil perfilLogado = {Conta.filter(conta => conta.logado == true)}/>}/>}
     </Routes>
   );
 }

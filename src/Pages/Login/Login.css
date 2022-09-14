@@ -1,0 +1,8 @@
+.Hidden{
+    display: none;
+}
+
+.showUp{
+    background-color: red;
+    padding: 8px;
+}

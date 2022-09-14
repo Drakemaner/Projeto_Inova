@@ -16,6 +16,8 @@ const FormLogin = (props) => {
             senha
         }  
         )
+        setEmail('')
+        setSenha('')
     }
 
     return(

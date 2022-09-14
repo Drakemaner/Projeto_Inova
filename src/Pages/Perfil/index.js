@@ -20,6 +20,7 @@ const Perfil = (props) => {
 
 
     const cadastrarComentario = (comentario) => {
+        comentario.nome = props.perfilLogado.nome
         setComentarios([...Comentarios, comentario])
     }
 
@@ -27,7 +28,7 @@ const Perfil = (props) => {
 
     return (
         <div>
-            <Header  estaLogado={props.status}/>
+            <Header  estaLogado={true}/>
 
             <div className='caesperfil'>
                 <h1>Perfil</h1>
@@ -36,7 +37,13 @@ const Perfil = (props) => {
                 <h3>Sobre Mim</h3>
                 <p>{props.descricao}</p>
                 <h3>Comentários:</h3>
-                {Comentarios.map(comentario=><p key={comentario.id}>{comentario.Comentario}</p>)}
+                {Comentarios.map
+                    (
+                    comentario=>
+                        <div key={comentario.id}>
+                            <p>{comentario.nome}</p>
+                            <p>{comentario.comentario}</p>
+                        </div>)}
                 <FormComentario comentario={valor => cadastrarComentario(valor)} />
             </div>
         </div>
