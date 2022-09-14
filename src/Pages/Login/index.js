@@ -14,7 +14,7 @@ import FormLogin from '../../Componentes/Formulario/FormLogin'
 
 const Login = (props) =>{
     const [logado, setLogado] = useState(false)
-    const [login, setLogin] = useState()
+    const [login, setLogin] = useState([])
     const [perfil, setPerfil] = useState([])
     const [texto, setTexto] = useState('')
     const [classe, setClasse] = useState('Hidden')
@@ -22,13 +22,10 @@ const Login = (props) =>{
     const Logado = (conta) => {
         console.log(conta)
         setPerfil(conta)
-            if(login === undefined){
-                setLogin(props.contas.filter(contas => conta.email === contas.email && conta.senha === contas.senha))
-            }
-            
-     
+           
 
-            else if(login.length === 0){
+             if(login.length === 0){
+                setLogin(props.contas.filter(contas => conta.email === contas.email && conta.senha === contas.senha))
                 if(conta.email === '' || conta.senha === ''){
                     setTexto('Campo de E-mail ou Senha vazios')
                     setClasse('Aviso')
@@ -42,6 +39,8 @@ const Login = (props) =>{
             }
              else if(login.length === 1){
                 console.log('Opaa')
+                setLogado(logado)
+                props.verificar(login)
                 setLogado(true)
                 setTexto('Você se Logou com Sucesso')
                 setClasse('Sucesso')

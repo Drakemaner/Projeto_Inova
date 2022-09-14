@@ -20,7 +20,7 @@ const Perfil = (props) => {
 
 
     const cadastrarComentario = (comentario) => {
-        comentario.nome = props.perfilLogado.nome
+        comentario.nome = props.perfilLogado
         setComentarios([...Comentarios, comentario])
     }
 
