@@ -4,38 +4,38 @@ import { useState } from 'react'
 
 
 
-const FormComentario = (props) =>{
+const FormComentario = (props) => {
     const [Comentario, setComentario] = useState('')
     const [id, setId] = useState(0)
 
 
-    const enviarComentario = (evento) =>{
+    const enviarComentario = (evento) => {
         evento.preventDefault()
-        
+
         setId(id + 1)
-        
+
         props.comentario
-        (
-            {
-                id,
-                Comentario
-            }
-        )
+            (
+                {
+                    id,
+                    Comentario
+                }
+            )
         setComentario('')
     }
 
 
-    return(
-        <>  
+    return (
+        <>  <div className='comentario'>
             <form onSubmit={enviarComentario}>
                 <Input
-                type="text"
-                placeholder="Digite seu Comentário"
-                enviar={valor => setComentario(valor)}
-                valor={Comentario}
-                /> 
-                <button type='submit'>Enviar</button>
-            </form>     
+                    type="text"
+                    placeholder="Escreva um comentário..."
+                    enviar={valor => setComentario(valor)}
+                    valor={Comentario}
+                />
+            </form>
+        </div>
         </>
     )
 }

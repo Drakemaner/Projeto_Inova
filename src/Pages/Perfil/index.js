@@ -30,12 +30,12 @@ const Perfil = (props) => {
             <Header  estaLogado={props.status}/>
 
             <div className='caesperfil'>
-                <h2>Seu Perfil</h2>
-                <img src={props.imagem} alt='' />
-                <p>{props.nome}</p>
-                <h4>Sobre Mim</h4>
+                <h1>Perfil</h1>
+                <img src={props.imagem} alt='Foto de perfil' />
+                <br/>
+                <h3>Sobre Mim</h3>
                 <p>{props.descricao}</p>
-                <h4>Comentários:</h4>
+                <h3>Comentários:</h3>
                 {Comentarios.map(comentario=><p key={comentario.id}>{comentario.Comentario}</p>)}
                 <FormComentario comentario={valor => cadastrarComentario(valor)} />
             </div>

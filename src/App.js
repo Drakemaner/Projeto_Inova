@@ -57,57 +57,57 @@ const  caesMain = [{
 
 const  caesPerfis = [{
     id: 0,
-    nome: 'Thor',
+    nome: 'Apollo',
     idade: 5,
-    sexo: 'M',
+    sexo: 'Macho',
     raça: 'Pastor Alemão',
-    descricao:'dsadasdaadsadad',
-    imagem: ''
+    descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+    imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 1,
-  nome: 'llll',
+  nome: 'Apollo',
   idade: 5,
   sexo: 'Macho',
   raça: 'Pastor Alemão',
-  descricao:'dsadasdasdasd',
-  imagem: ''
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 2,
-  nome: 'Thor',
+  nome: 'Apollo',
   idade: 5,
-  sexo: 'M',
+  sexo: 'Macho',
   raça: 'Pastor Alemão',
-  descricao:'',
-  imagem: ''
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 3,
-  nome: 'Thor',
+  nome: 'Apollo',
   idade: 5,
-  sexo: 'M',
+  sexo: 'Macho',
   raça: 'Pastor Alemão',
-  descricao:'',
-  imagem: ''
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 4,
-  nome: 'Thor',
+  nome: 'Apollo',
   idade: 5,
-  sexo: 'M',
+  sexo: 'Macho',
   raça: 'Pastor Alemão',
-  descricao:'',
-  imagem: ''
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 5,
-  nome: 'Thor',
+  nome: 'Apollo',
   idade: 5,
-  sexo: 'M',
+  sexo: 'Macho',
   raça: 'Pastor Alemão',
-  descricao:'',
-  imagem: ''
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 
 ]
@@ -143,7 +143,7 @@ function App() {
       <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta}/>} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
       <Route path='/Perfis' element={<Perfis caes={caesPerfis}/>}/>
-      {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil imagem = {cao.imagem}  descricao = {cao.descricao} nome={cao.nome}/>}/>)}
+      {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil imagem = {cao.imagem}  descricao = {cao.descricao}  />}/>)}
       {Conta.logado === true && <Route path={`/MeuPerfil`} element={<Perfil nome={Conta.nome}/>}/>}
     </Routes>
   );
