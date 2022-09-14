@@ -8,7 +8,8 @@ import './Main.css'
 
 const Main = (props) => {
 
-
+    const anuncio_1= ''
+    const anuncio_2 = ''
 
 
 
@@ -30,6 +31,11 @@ const Main = (props) => {
                     </div>
                 )}
                 <hr></hr>
+                <h1><strong>Parceiros</strong></h1>
+                <div className='parceiros'>
+                    <img src = '' alt = ''> </img>
+                    <img src = '' alt = ''> </img>
+                </div>
             </div>
             <Footer/>
         </div>
