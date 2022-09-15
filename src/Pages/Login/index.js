@@ -46,15 +46,6 @@ const Login = (props) =>{
             }
     }
 
-    
-    
-    
-    
-    
-    
-   
-
-
     return(
         <div>
             <Header/>
@@ -66,8 +57,6 @@ const Login = (props) =>{
         </div>
     )
 }
-
-
 
 
 export default Login

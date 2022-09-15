@@ -115,11 +115,6 @@ const  caesPerfis = [{
 
 function App() {
 
-  const [Logado, setLogado] = useState(true)
-
-
-  
-
   const [Conta, setConta] = useState([])
   const [perfilLogado, setPefilLogado] = useState([])
 
@@ -131,9 +126,6 @@ function App() {
   const cadastrarContas = (conta) =>{
     setConta([...Conta, conta])
   }
-
-
-    
 
   return (
     <Routes>
