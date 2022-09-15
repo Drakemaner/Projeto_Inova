@@ -115,38 +115,30 @@ const  caesPerfis = [{
 
 function App() {
 
-  const [Logado, setLogado] = useState(false)
+  const [Logado, setLogado] = useState(true)
 
 
-  const Status = (valor) =>{
-    if(valor == true){
-      setLogado(true)
-      console.log(Logado)
-    }
-    else{
-      setLogado(false)
-    }
-  }
+  
 
   const [Conta, setConta] = useState([])
   const [perfilLogado, setPefilLogado] = useState([])
 
 
-  
+  const logadoMomento=(valor) =>{
+    setPefilLogado([valor])
+  }
 
   const cadastrarContas = (conta) =>{
     setConta([...Conta, conta])
   }
 
 
-  
-  
-
+    
 
   return (
     <Routes>
-      <Route path="/" element={<Main caes={caesMain} status = {Logado}/>}/>
-      <Route path='/Login' element={<Login status = {valor => Status(valor)} contas={Conta} verificar = {valor => setPefilLogado(valor)} />} />
+      <Route path="/" element={<Main caes={caesMain}/>}/>
+      <Route path='/Login' element={<Login  contas={Conta} verificar = {valor => logadoMomento(valor)} />} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
       <Route path='/Perfis' element={<Perfis  caes={caesPerfis}/>}/>
       {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil perfilLogado = {perfilLogado.map(perfil => perfil.nome)} imagem = {cao.imagem}  descricao = {cao.descricao}  />}/>)}

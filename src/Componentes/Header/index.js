@@ -10,10 +10,13 @@ const Header = (props) =>{
     const [classeLogado,setClasseLogado] = useState('hidden')
     const [classeGuest, setClasseGuest] = useState('')
     const [logado, setLogado] = useState()
+    const json = localStorage.getItem('Logado')
+    const status = JSON.parse(json)
 
 
+    console.log(status)
     useEffect(() =>{
-        if(props.estaLogado == true){
+        if(status === true){
             setClasseLogado('')
             setClasseGuest('hidden')
         }
@@ -21,11 +24,13 @@ const Header = (props) =>{
             setClasseLogado('hidden')
             setClasseGuest('')
         }
-        setLogado(props.estaLogado)
-    },[props.estaLogado])
+        
+    },[])
 
     
-        
+    const removerStatus = () =>{
+        localStorage.removeItem('Logado')
+    }
     
 
     return(
@@ -39,6 +44,7 @@ const Header = (props) =>{
                     <ul>
                         <li className= {classeLogado}><Link to= '/MeuPerfil'><strong>Meu Perfil</strong></Link></li>
                         <li className= {classeLogado}><Link to= '/Perfis'><strong>Perfis</strong></Link></li>
+                        <li className={classeLogado}><Link onClick={removerStatus} to ='/' ><strong>Log Out</strong></Link></li>
                         <li className={classeGuest}><Link to= '/Login'><strong>Entrar</strong></Link></li>
                         <li className={classeGuest}><Link to= '/Cadastro'><strong>Cadastrar</strong></Link></li>
                     </ul>

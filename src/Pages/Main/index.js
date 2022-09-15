@@ -16,7 +16,7 @@ const Main = (props) => {
 
     return (
         <div className='main'>
-            <Header estaLogado={props.status} />
+            <Header />
             <Mapa/>
             <div className='adoção'>
                 <hr></hr>

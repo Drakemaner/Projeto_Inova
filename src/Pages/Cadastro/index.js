@@ -16,6 +16,7 @@ const Cadastro = (props) =>{
     const Cadastrado = (conta) => {
         console.log(conta)
         props.contas(conta)
+        localStorage.setItem('Usuario',JSON.stringify(conta))
     }
 
 

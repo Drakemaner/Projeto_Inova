@@ -16,8 +16,8 @@ function FormCadastro(props) {
     const [logado, setLogado] = useState(false)
 
 
-    const cadastro = (evento) => {
-        evento.preventDefault()
+    const cadastro = () => {
+   
         props.aoCadastrar
         (
             {

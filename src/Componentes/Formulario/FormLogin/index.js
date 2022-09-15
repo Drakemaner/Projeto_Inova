@@ -9,8 +9,7 @@ const FormLogin = (props) => {
     const [email,setEmail] = useState('')
     const [senha, setSenha] = useState('')
 
-    const login = (evento) => {
-        evento.preventDefault()
+    const login = () => {
         props.aoLogar({
             email,
             senha

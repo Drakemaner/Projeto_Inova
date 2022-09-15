@@ -14,46 +14,42 @@ import FormLogin from '../../Componentes/Formulario/FormLogin'
 
 const Login = (props) =>{
     const [logado, setLogado] = useState(false)
-    const [login, setLogin] = useState([])
     const [perfil, setPerfil] = useState([])
     const [texto, setTexto] = useState('')
     const [classe, setClasse] = useState('Hidden')
-    
+    const json = localStorage.getItem('Usuario')
+    const usuario = JSON.parse(json)
+
+
     const Logado = (conta) => {
         console.log(conta)
         setPerfil(conta)
-           
-
-             if(login.length === 0){
-                setLogin(props.contas.filter(contas => conta.email === contas.email && conta.senha === contas.senha))
-                if(conta.email === '' || conta.senha === ''){
-                    setTexto('Campo de E-mail ou Senha vazios')
-                    setClasse('Aviso')
-                }
-                else if(conta.email !== '' || conta.senha !== ''){
-                    setTexto('E-mail ou Senha Inválidos')
-                    console.log('Sexo')
-                    setClasse('Aviso')
-                    
-                }
-            }
-             else if(login.length === 1){
+        
+            console.log(usuario)
+            
+            
+            if(usuario.email === conta.email && usuario.senha === conta.senha){
                 console.log('Opaa')
-                setLogado(logado)
-                props.verificar(login)
-                setLogado(true)
+                props.verificar(usuario)
+                localStorage.setItem('Logado', true)
                 setTexto('Você se Logou com Sucesso')
                 setClasse('Sucesso')
-            } 
-        
-        
-         
+            }
+            else if(conta.email === '' || conta.senha === ''){
+                setTexto('Campo de E-mail ou Senha vazios')
+                setClasse('Aviso')
+            }
+            else if(conta.email !== '' || conta.senha !== ''){
+                setTexto('E-mail ou Senha Inválidos')
+                console.log('Sexo')
+                setClasse('Aviso')
+            }
     }
 
     
     
-    console.log(login)
-    props.status(logado)
+    
+    
     
     
    
@@ -61,7 +57,7 @@ const Login = (props) =>{
 
     return(
         <div>
-            <Header estaLogado = {logado}/>
+            <Header/>
             <FormLogin
               aoLogar={conta => Logado(conta)}  
             />
