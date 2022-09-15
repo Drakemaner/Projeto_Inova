@@ -5,13 +5,6 @@ import './Login.css'
 import { useState } from 'react'
 import FormLogin from '../../Componentes/Formulario/FormLogin'
 
-
-
-
-
-
-
-
 const Login = (props) =>{
     const [logado, setLogado] = useState(false)
     const [perfil, setPerfil] = useState([])
