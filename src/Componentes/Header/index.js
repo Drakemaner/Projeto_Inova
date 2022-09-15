@@ -33,9 +33,6 @@ const Header = (props) =>{
         <div className='header'>
             <header>
                 <div>
-                <input type='text' placeholder='Faça sua pesquisa na PetMatch...'></input> 
-                </div>
-                <div>
                 <Link to='/'><img src={imagem} alt='logo'/></Link>
                 </div>
                 <nav>

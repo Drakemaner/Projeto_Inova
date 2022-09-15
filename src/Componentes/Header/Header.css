@@ -1,24 +1,12 @@
 .header{
     background-color: #c9e265;
     text-align: center;
-    padding: 55px;
+    padding: 65px;
     margin-bottom: 60px;
     color: white;
 }
 
-.header Input{
-	position: relative;
-    width: 500px;
-	height: 30px;
-	left: -195px;
-	top: 22px;
-    text-align: left;
-    padding: 15px 10px 10px 10px;
-    border-radius: 20px;
-    box-shadow: 8px 8px 16px rgba(0,0,0,0.08);
 
-
-}
 
 .header img {
     max-width: 16%;
@@ -35,12 +23,12 @@
     font-size: 25px;
     list-style: none;
     float: right;
-    margin: 0px 10px;
+    margin: 15px 10px;
     width: 120px;
     position: relative;
-    right: -30px;
+    right: -35px;
     bottom: 50px;
-    padding: 15px 10px 10px 10px;
+    padding: 15px 15px 10px 15px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.280);
     

@@ -8,8 +8,8 @@ import './Main.css'
 
 const Main = (props) => {
 
-    const anuncio_1= ''
-    const anuncio_2 = ''
+    const anuncio_1 = 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/anuncios/Anuncio_1.jpeg?raw=true'
+    const anuncio_2 = 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/anuncios/Anuncio_2.jpeg?raw=true'
 
 
 
@@ -33,8 +33,8 @@ const Main = (props) => {
                 <hr></hr>
                 <h1><strong>Parceiros</strong></h1>
                 <div className='parceiros'>
-                    <img src = '' alt = ''> </img>
-                    <img src = '' alt = ''> </img>
+                    <img src = {anuncio_1} alt = ''/> 
+                    <img src = {anuncio_2} alt = ''/> 
                 </div>
             </div>
             <Footer/>
