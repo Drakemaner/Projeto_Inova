@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Header from '../../Componentes/Header'
 import './Perfil.css'
 import FormComentario from '../../Componentes/FormComentario'
-
+import Footer from '../../Componentes/Footer'
 
 
 
@@ -47,7 +47,9 @@ const Perfil = (props) => {
                         </div>)}
                 <FormComentario comentario={valor => cadastrarComentario(valor)} />
             </div>
+            <Footer />
         </div>
+        
     )
 }
 
