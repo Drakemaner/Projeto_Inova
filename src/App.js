@@ -119,9 +119,7 @@ function App() {
   const [perfilLogado, setPefilLogado] = useState([])
 
 
-  const logadoMomento=(valor) =>{
-    setPefilLogado([valor])
-  }
+  
 
   const cadastrarContas = (conta) =>{
     setConta([...Conta, conta])
@@ -130,11 +128,11 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Main caes={caesMain}/>}/>
-      <Route path='/Login' element={<Login  contas={Conta} verificar = {valor => logadoMomento(valor)} />} />
+      <Route path='/Login' element={<Login  contas={Conta}/>} />
       <Route path='/Cadastro' element={<Cadastro contas = {valor => cadastrarContas(valor)}/>}/>
       <Route path='/Perfis' element={<Perfis  caes={caesPerfis}/>}/>
-      {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil perfilLogado = {perfilLogado.map(perfil => perfil.nome)} imagem = {cao.imagem}  descricao = {cao.descricao}  />}/>)}
-      {Conta.logado === true && <Route path='/MeuPerfil' element={<Perfil perfilLogado = {perfilLogado}/>}/>}
+      {caesPerfis.map(cao => <Route key ={cao} path={`/Perfil/${cao.nome}`} element={<Perfil  imagem = {cao.imagem}  descricao = {cao.descricao}  />}/>)}
+      {Conta.logado === true && <Route path='/MeuPerfil' element={<Perfil/>}/>}
     </Routes>
   );
 }

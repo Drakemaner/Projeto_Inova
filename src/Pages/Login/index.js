@@ -23,7 +23,6 @@ const Login = (props) =>{
             
             if(usuario.email === conta.email && usuario.senha === conta.senha){
                 console.log('Opaa')
-                props.verificar(usuario)
                 localStorage.setItem('Logado', true)
                 setTexto('Você se Logou com Sucesso')
                 setClasse('Sucesso')

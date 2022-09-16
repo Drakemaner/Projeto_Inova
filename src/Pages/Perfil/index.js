@@ -14,13 +14,14 @@ const Perfil = (props) => {
 
 
     const [Comentarios, setComentarios] = useState([])
-
+    const json = localStorage.getItem('Usuario')
+    const usuario = JSON.parse(json)
 
 
 
 
     const cadastrarComentario = (comentario) => {
-        comentario.nome = props.perfilLogado
+        comentario.nome = usuario.nome
         setComentarios([...Comentarios, comentario])
     }
 
