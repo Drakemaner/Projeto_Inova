@@ -42,7 +42,7 @@ const Perfil = (props) => {
                     (
                     comentario=>
                         <div key={comentario.id}>
-                            <p>{comentario.nome}</p>
+                            <strong>{`${comentario.nome}:`}</strong>
                             <p>{comentario.comentario}</p>
                         </div>)}
                 <FormComentario comentario={valor => cadastrarComentario(valor)} />
