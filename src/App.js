@@ -109,54 +109,10 @@ nome: 'Apollo',
 idade: 4,
 sexo: 'Macho',
 raça: 'Viralata',
-descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
-imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
+descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procuro uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_14.jpg?raw=true'
 },
-{
-  id: 1,
-  nome: 'Apollo',
-  idade: 10,
-  sexo: 'Macho',
-  raça: 'Viralata',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
-},
-{
-  id: 2,
-  nome: 'Apollo',
-  idade: 9,
-  sexo: 'Macho',
-  raça: 'Viralata',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
-},
-{
-  id: 3,
-  nome: 'Apollo',
-  idade: 2,
-  sexo: 'Macho',
-  raça: 'Viralata',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
-},
-{
-  id: 4,
-  nome: 'Apollo',
-  idade: 5,
-  sexo: 'Macho',
-  raça: 'Viralata',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
-},
-{
-  id: 5,
-  nome: 'Apollo',
-  idade: 8,
-  sexo: 'Macho',
-  raça: 'Viralata',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
-},
+
 
 ]
 
