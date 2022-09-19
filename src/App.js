@@ -106,9 +106,9 @@ const  caesMain = [{
 const  caesPerfis = [{
 id: 0,
 nome: 'Apollo',
-idade: 4,
+idade: '1 ano e 6 meses',
 sexo: 'Macho',
-raça: 'Viralata',
+raça: 'Collie',
 descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procuro uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
 imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_14.jpg?raw=true'
 },
