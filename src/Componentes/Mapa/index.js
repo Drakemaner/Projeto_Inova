@@ -44,17 +44,9 @@ const Mapa = () => {
                 <Marker longitude={-40.30012385219876} latitude={-20.301592252791156} color="red" />
                 <Marker longitude={-40.37366148053922} latitude={-20.354609848476812} color="red" />
                 <Marker longitude={-40.34503692314379} latitude={-20.44862829573376} color="red" />
-                <Marker longitude={-40.29361656519826} latitude={-20.33639681975421} color="red" />
-                {showPopup && (
-                    <Popup longitude={-40.29361656519826} latitude={-20.33639681975421}
-                        anchor="bottom"
-                        onClose={() => setShowPopup(false)}>
-                        Você está aqui
-                    </Popup>)}
+            
                 <GeolocateControl ref={geolocateControlRef} />
-                <NavigationControl
-                    visualizePitch {...(true)}
-                />
+                <NavigationControl/>
                 <ScaleControl />
 
             </Map>
