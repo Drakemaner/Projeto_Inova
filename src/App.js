@@ -98,45 +98,45 @@ const  caesMain = [{
   nome: 'CHORONA',
   sexo: 'Fêmea',
   descricao: 'Chorona porte médio, castrada e vacinada.' ,
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_6.jpeg?raw=true'
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_11.jpg?raw=true'
 },
 
 ]
 
 const  caesPerfis = [{
-    id: 0,
-    nome: 'Apollo',
-    idade: 5,
-    sexo: 'Macho',
-    raça: 'Pastor Alemão',
-    descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
-    imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
+id: 0,
+nome: 'Apollo',
+idade: 4,
+sexo: 'Macho',
+raça: 'Viralata',
+descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 1,
   nome: 'Apollo',
-  idade: 5,
+  idade: 10,
   sexo: 'Macho',
-  raça: 'Pastor Alemão',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  raça: 'Viralata',
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
   imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 2,
   nome: 'Apollo',
-  idade: 5,
+  idade: 9,
   sexo: 'Macho',
-  raça: 'Pastor Alemão',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  raça: 'Viralata',
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
   imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 3,
   nome: 'Apollo',
-  idade: 5,
+  idade: 2,
   sexo: 'Macho',
-  raça: 'Pastor Alemão',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  raça: 'Viralata',
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
   imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
@@ -144,17 +144,17 @@ const  caesPerfis = [{
   nome: 'Apollo',
   idade: 5,
   sexo: 'Macho',
-  raça: 'Pastor Alemão',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  raça: 'Viralata',
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
   imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 5,
   nome: 'Apollo',
-  idade: 5,
+  idade: 8,
   sexo: 'Macho',
-  raça: 'Pastor Alemão',
-  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho da raça Collie, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
+  raça: 'Viralata',
+  descricao:'Oii, me chamo Apollo tenho um ano e seis meses. Sou macho, extrovertido e procura uma namorada da mesma raça que eu para termos filhotinhos lindos.Obs: Só aceito namoradas aprovadas pela minha mãe Interessadas por favor deixar um latido nos comentários.',
   imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 

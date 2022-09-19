@@ -42,8 +42,8 @@ const Header = (props) =>{
                 </div>
                 <nav>
                     <ul>
-                        <li className= {classeLogado}><Link to= '/MeuPerfil'><strong>Meu Perfil</strong></Link></li>
-                        <li className= {classeLogado}><Link to= '/Perfis'><strong>Perfis</strong></Link></li>
+                        <li className= {classeGuest}><Link to= '/MeuPerfil'><strong>Meu Perfil</strong></Link></li>
+                        <li className= {classeGuest}><Link to= '/Perfis'><strong>Perfis</strong></Link></li>
                         <li className={classeLogado}><Link onClick={removerStatus} to ='/' ><strong>Log Out</strong></Link></li>
                         <li className={classeGuest}><Link to= '/Login'><strong>Entrar</strong></Link></li>
                         <li className={classeGuest}><Link to= '/Cadastro'><strong>Cadastrar</strong></Link></li>
