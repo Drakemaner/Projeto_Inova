@@ -12,44 +12,92 @@ import Perfil from './Pages/Perfil';
 
 const  caesMain = [{
   id: 0,
-  nome: 'SIMBA',
-  sexo: 'Macho',
-  descricao: 'Simba resgatado e bem novinho,um cachorro bem feliz e amoroso.',
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_1.jpeg?raw=true7'
+  nome: 'EVA',
+  sexo: 'Fêmea',
+  descricao: 'Eva , porte médio ,castrada e vacinada',
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_6.jpeg?raw=true'
 },
 {
   id: 1,
-  nome: 'JADE',
-  sexo: 'Fêmea',
-  descricao: 'Cheia de personalidade e energia.Dócil e se da super bem com crianças.' ,
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_2.jpeg?raw=true'
+  nome: 'EDGAR',
+  sexo: 'Macho',
+  descricao: 'Edgar , porte médio, castrado e vacinado.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_8.jpeg?raw=true'
 },
 {
   id: 2,
-  nome: 'CACAU',
+  nome: 'GINA',
   sexo: 'Fêmea',
-  descricao:'Tímida,pórem companheira e extremamente carinhosa.Cacau já foi vacinada e vermífugada.' ,
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_3.jpeg?raw=true'
+  descricao:'Gina, porte médio, castrada e vacinada.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_9.jpeg?raw=true'
 },
 {
   id: 3,
-  nome: 'PITOCO',
-  sexo: 'Macho',
-  descricao: 'Esse é o Pitoco e alegria e animação é com esse cachorrinho mesmo! Pitoco tem cerca de dois aninhos e aguarda ansioso por uma família.' ,
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_4.jpeg?raw=true'
+  nome: 'HELENA',
+  sexo: 'Fêmea',
+  descricao: 'Helena, pequeno porte, castrada e vacinada.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_3.jpeg?raw=true'
 },
 {
   id: 4,
-  nome: 'PITOCO',
+  nome: 'OREO',
   sexo: 'Macho',
-  descricao: 'Esse é o Pitoco e alegria e animação é com esse cachorrinho mesmo! Pitoco tem cerca de dois aninhos e aguarda ansioso por uma família.' ,
-  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_5.jpeg?raw=true'
+  descricao: 'Oreo, pequeno porte, castrado e vacinado.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_1.jpeg?raw=true'
 },
 {
   id: 5,
-  nome: 'PITOCO',
+  nome: 'NESCAU',
   sexo: 'Macho',
-  descricao: 'Esse é o Pitoco e alegria e animação é com esse cachorrinho mesmo! Pitoco tem cerca de dois aninhos e aguarda ansioso por uma família.' ,
+  descricao: 'Nescau, pequeno porte, castrado e vacinado.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_2.jpeg?raw=true'
+},
+
+{
+  id: 6,
+  nome: 'JASMIN',
+  sexo: 'Fêmea',
+  descricao: 'Jasmin é de porte médio castrada e vacinada e está disponível para adoção.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_4.jpeg?raw=true'
+},
+
+{
+  id: 7,
+  nome: 'BENTO',
+  sexo: 'Macho',
+  descricao: 'Bento é um filhotão de porte grande. Um docinho que só tem tamanho.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_10.jpeg?raw=true'
+},
+
+{
+  id: 8,
+  nome: 'GEÓRGIA',
+  sexo: 'Fêmea',
+  descricao: 'Essa fofura é a Geórgia de porte grande, super dócil e ama brincar. É castrada e vacinada.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_13.jpg?raw=true'
+},
+
+{
+  id: 9,
+  nome: 'MEG',
+  sexo: 'Fêmea',
+  descricao: 'Meg , porte grande, castrada e vacinada. ' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_12.jpg?raw=true'
+},
+
+{
+  id: 10,
+  nome: 'NEVE',
+  sexo: 'Fêmea',
+  descricao: 'Neve, porte médio, castrada e vacinada.' ,
+  imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_7.jpeg?raw=true'
+},
+
+{
+  id: 11,
+  nome: 'CHORONA',
+  sexo: 'Fêmea',
+  descricao: 'Chorona porte médio, castrada e vacinada.' ,
   imagem: 'https://github.com/Drakemaner/Site-Enzo/blob/main/public/fotos/Cachorro_6.jpeg?raw=true'
 },
 
