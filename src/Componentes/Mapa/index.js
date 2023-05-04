@@ -47,35 +47,35 @@ const Mapa = () => {
                 {showPopup && (
                     <Popup longitude={-40.28830700265175} latitude={-20.342103648037153}
                         anchor="bottom"
-                        onClose={() => setShowPopup(false)}>
+                        onClose={() => setShowPopup(true)}>
                         Pet Land
                     </Popup>)}
                     
                     {showPopup && (
                     <Popup longitude={-40.29880292447822} latitude={-20.350416568818478}
                         anchor="bottom"
-                        onClose={() => setShowPopup(false)}>
+                        onClose={() => setShowPopup(true)}>
                         Bicho Binho
                     </Popup>)}
 
                     {showPopup && (
                     <Popup longitude={-40.30012385219876} latitude={-20.301592252791156}
                         anchor="bottom"
-                        onClose={() => setShowPopup(false)}>
+                        onClose={() => setShowPopup(true)}>
                         Pet fair
                     </Popup>)}
 
                     {showPopup && (
                     <Popup longitude={-40.37366148053922} latitude={-20.354609848476812}
                         anchor="bottom"
-                        onClose={() => setShowPopup(false)}>
+                        onClose={() => setShowPopup(true)}>
                         Cão Amigo
                     </Popup>)}
 
                     {showPopup && (
                     <Popup longitude={-40.34503692314379} latitude={-20.44862829573376}
                         anchor="bottom"
-                        onClose={() => setShowPopup(false)}>
+                        onClose={() => setShowPopup(true)}>
                         Animais CarentesES
                     </Popup>)}
                  
